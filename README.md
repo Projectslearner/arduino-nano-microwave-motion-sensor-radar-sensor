@@ -1,7 +1,3 @@
-Here's a structured description for your project involving a Microwave Motion Sensor RADAR sensor with an Arduino Nano:
-
----
-
 # Microwave Motion Sensor RADAR Sensor
 
 #### Project Overview
