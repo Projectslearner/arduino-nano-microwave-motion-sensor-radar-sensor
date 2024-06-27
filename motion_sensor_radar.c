@@ -6,11 +6,10 @@
 */
 
 const int radarPin = 2; // Digital pin connected to the radar sensor module
-const int ledPin = 13; // LED pin
 
-void setup() {
+void setup() 
+{
   pinMode(radarPin, INPUT); // Set radar sensor pin as input
-  pinMode(ledPin, OUTPUT); // Set LED pin as output
   Serial.begin(9600); // Initialize serial communication
 }
 
@@ -22,12 +21,9 @@ void loop() {
   Serial.println(sensorValue);
   
   // If sensor value is HIGH (motion detected), turn on LED
-  if (sensorValue == HIGH) {
-    digitalWrite(ledPin, HIGH); // Turn on LED
+  if (sensorValue == HIGH)
+  {
     Serial.println("Motion Detected!");
-  } else {
-    digitalWrite(ledPin, LOW); // Turn off LED
-  }
-  
+  } 
   delay(100); // Delay for stability
 }
